@@ -43,7 +43,7 @@ pipeline {
         }
         stage('Release') {
             steps {
-                echo 'Releasing'
+                echo 'Releasing...'
                 withCredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding',
                     credentialsId: 'MyAWS',
